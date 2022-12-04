@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(58, 60, 185);
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  color: rgb(221, 222, 255);
+  text-transform: capitalize;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  padding: 0px;
+  border-top: 1px solid rgb(1, 2, 73);
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: rgb(237, 238, 252);
+  border-top: 1px solid rgb(1, 2, 73);
+  border-left: 1px solid rgb(1, 2, 73);
+}
+
+input,
+textarea {
+  border-radius: 6px;
+  border: 0px;
+  padding: 10px;
+  margin: 4px 0px 16px 0px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.instrucaoform {
+  font-size: 16px;
+}
+
+.contato {
+  font-size: 24px;
+}
+
+.btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: rgb(58, 60, 185);
+  color: rgb(221, 222, 255);
+}
+
+/* Clear floats after the columns */
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(237, 238, 252);
+  padding: 10px;
+  text-align: center;
+  color: rgb(58, 60, 185);
+  border-top: 1px solid rgb(1, 2, 73);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
